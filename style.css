@@ -1,7 +1,7 @@
 @import "reset.css";
 
 body {
-  background-color: #ecf0f1;
+  background-color: #2a2e30;
   color: rgb(151, 0, 197);
   display: flex;
   flex-direction: column;
@@ -9,13 +9,12 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.322);
-  color: white;
 }
 
 .clock {
   font-size: 150px;
   font-weight: 700;
+  color: white;
 }
 .btn {
   cursor: pointer;
@@ -27,6 +26,7 @@ body {
 
 .nameform,
 .greetings {
+  color: white;
   display: none;
 }
 
@@ -51,4 +51,23 @@ input:focus {
 
 .showing {
   display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }

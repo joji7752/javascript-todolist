@@ -1,4 +1,4 @@
-const nameForm = document.querySelector(".js-nameform"),
+const nameForm = document.querySelector(".js-nameForm"),
   input = document.querySelector("input"),
   greeting = document.querySelector(".js-greetings");
 
