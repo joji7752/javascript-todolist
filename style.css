@@ -2,7 +2,7 @@
 
 body {
   background-color: #2a2e30;
-  color: rgb(151, 0, 197);
+  color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +12,7 @@ body {
 }
 
 .clock {
-  font-size: 150px;
+  font-size: 120px;
   font-weight: 700;
   color: white;
 }
@@ -35,14 +35,20 @@ input {
   padding: 15px 0px;
   font-size: 18px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  margin: 32px 0px 62px 0px;
+  margin: 32px 0px 32px 0px;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  border-radius: 20px;
 }
 
 input:focus {
-  border-bottom: 2px solid rgb(217, 27, 255);
+  border: 3px solid rgb(255, 185, 34);
 }
+
+.todoform {
+  margin-bottom: 10px;
+}
+
 .greetings {
   font-size: 42px;
   margin: 32px 0px 62px 0px;
@@ -70,4 +76,24 @@ input:focus {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+  opacity: 70%;
+}
+
+.todolist {
+  margin: 0px 30px 30px 30px;
+}
+
+.todolist li {
+  background-color: rgba(255, 255, 255, 0.993);
+  height: 40px;
+  margin: 15px;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.todolist li button {
+  margin-right: 10px;
 }
