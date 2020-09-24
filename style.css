@@ -81,10 +81,11 @@ input:focus {
 
 .todolist {
   margin: 0px 30px 30px 30px;
+  display: flex;
 }
 
 .todolist li {
-  background-color: rgba(255, 255, 255, 0.993);
+  background-color: rgba(255, 158, 47, 0.993);
   height: 40px;
   margin: 15px;
   color: black;
@@ -96,4 +97,7 @@ input:focus {
 
 .todolist li button {
   margin-right: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
 }
